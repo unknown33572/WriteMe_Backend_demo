@@ -14,7 +14,7 @@ public class Post {
   private int userId;
   private String name;
   private String title;
-  private String content;
+  private String contents;
   private LocalDateTime writeDate;
   private int viewCount;
 }
