@@ -9,12 +9,13 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Post {
-  private int contentId;
+public class NoticeBoard {
+  private int id;
   private int userId;
-  private String name;
   private String title;
   private String contents;
-  private LocalDateTime writeDate;
+  private LocalDateTime createTime;
+  private LocalDateTime editTime;
+  private boolean isEdited;
   private int viewCount;
 }

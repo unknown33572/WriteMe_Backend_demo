@@ -12,8 +12,8 @@ public interface UserMapper {
   User selectUserById(int id);
 
   @Insert("""
-          INSERT INTO users (name, userId, pwd, email, phone, gender)
-          VALUES (#{name}, #{userId}, #{pwd}, #{email}, #{phone}, #{gender})
+          INSERT INTO users (id, user_id, password, nickname, email, phone, is_admin)
+          VALUES (#{id}, #{user_id}, #{password}, #{nickname}, #{email}, #{phone}, #{is_admin})
           """)
   @Options(useGeneratedKeys = true, keyProperty = "id")
   int insertUser(User user);
